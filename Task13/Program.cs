@@ -18,8 +18,9 @@ void PrintThirdDigital(int num)
     else
     {
         while (num > 999)
-        {
-            num = Convert.ToInt32(Math.Floor(Convert.ToDouble(num / 10)));
+        { 
+            num  /= 10;
+           // num = Convert.ToInt32(Math.Floor(Convert.ToDouble(num / 10)));
         }
         int result = num % 10;
         Console.WriteLine($"Третье число: {result}");
